@@ -34,18 +34,9 @@ const SignIn = () => {
     }   
     return (
         <div className="flex justify-center items-center">
-            <div className="w-[540px] h-[624px] bg-common p-7 rounded-xl flex flex-col justify-between items-center">
+            <div className="w-[540px] bg-common p-7 rounded-xl flex flex-col justify-between items-center space-y-8">
                 {/* logo */}
-                <div className="size-[150px] rounded-full bg-gray-300 flex items-center justify-center">
-                    <Image 
-                        src={logo}
-                        alt="logo" 
-                        width={150} 
-                        height={150} 
-                        className="rounded-full object-cover"
-                        priority
-                    />
-                </div>
+                <Image src={logo} alt="logo" width={150} height={150}></Image>
                 {/* form heading */}
                 <div className="text-center space-y-2">
                     <h2 className="font-semibold text-2xl text-header">Welcome Back Admin!</h2>
