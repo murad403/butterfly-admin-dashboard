@@ -10,8 +10,9 @@ type TProps = {
     defaultValue?: string
 }
 
-const FormInput = ({label, type, name, placeholder, validation, defaultValue}: TProps) => {
-    const {register, formState: {errors}} = useFormContext();
+const FormInput = ({ label, type, name, placeholder, validation, defaultValue }: TProps) => {
+    const { register, formState: { errors } } = useFormContext();
+    // console.log(validation);
     return (
         <div className="w-full mb-3">
             <label className="block text-header font-semibold text-[16px] mb-2 capitalize">{label ? label : null}</label>

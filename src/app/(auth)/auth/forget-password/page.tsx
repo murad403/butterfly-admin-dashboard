@@ -27,7 +27,7 @@ const ForgetPassword = () => {
                 {/* login form */}
                 <div className="w-full">
                     <FormHandler onSubmit={onsubmit}>
-                        <FormInput validation={validation} type="text" name="email" label="email" placeholder="Enter your email"></FormInput>
+                        <FormInput validation={validation} type="email" name="email" label="email" placeholder="Enter your email"></FormInput>
                         <button type="submit" className="bg-main w-full text-header rounded-xl py-3 mt-7 cursor-pointer">Verify</button>
                     </FormHandler>
                 </div>
