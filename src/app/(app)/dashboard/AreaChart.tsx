@@ -113,7 +113,7 @@ const AreaChart = () => {
   }
 
   return (
-    <div className="w-full border h-[350px] border-border-color rounded-xl p-5 bg-common">
+    <div className="w-full border h-full border-border-color rounded-xl p-5 bg-common">
       {/* Header with Title and Filter */}
       <div className="flex items-center justify-between mb-5">
         <h1 className="text-2xl font-semibold text-white">Earning Overview</h1>

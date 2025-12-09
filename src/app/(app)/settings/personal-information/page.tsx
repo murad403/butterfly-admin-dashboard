@@ -34,7 +34,7 @@ const PersonalInformation = () => {
                     <span>Edit Profile</span>
                 </button>
             </div>
-            <div className='flex items-start gap-10'>
+            <div className='flex items-center gap-10'>
                 <div className='w-1/3 h-[360px] rounded-xl bg-common border border-border-color flex items-center flex-col gap-4 justify-center'>
                     <div className='relative'>
                         <Image src={profileImage} alt='profile image' width={140} height={140} className='rounded-full'></Image>
@@ -48,7 +48,7 @@ const PersonalInformation = () => {
                     <p className='text-lg text-title'>Profile</p>
                     <h3 className='font-medium text-2xl text-header'>Admin</h3>
                 </div>
-                <div className='w-2/3 h-[360px]'>
+                <div className='w-2/3'>
                     <form className='space-y-5' onSubmit={handleSubmit(onSubmit)}>
                         <div>
                             <label className="block text-header font-semibold text-[16px] mb-2 capitalize">Name</label>

@@ -39,7 +39,7 @@ const AdminSidebar = () => {
                             {adminSidebarItems?.map((item) => (
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton asChild>
-                                        <Link className={`${pathName === item.url ? "bg-main text-header" : "bg-common hover:bg-slate-600 text-title hover:text-white"} mb-4 py-5  `} href={item.url}>
+                                        <Link className={`${ pathName === item.url ? "bg-main text-header" : "bg-common hover:bg-slate-600 text-title hover:text-white"} mb-4 py-5  `} href={item.url}>
                                             <item.icon />
                                             <span>{item.title}</span>
                                         </Link>

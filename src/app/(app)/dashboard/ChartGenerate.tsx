@@ -15,9 +15,9 @@ import {
 } from "@/components/ui/chart"
 
 const chartData = [
-    { browser: "Nature Chart", visitors: 275, fill: "#28D33C" },
-    { browser: "Transit Chart", visitors: 200, fill: "#E300C5" },
-    { browser: "Synastry Chart", visitors: 187, fill: "#FFFFFF" }
+    { browser: "Soul Compass", visitors: 275, fill: "#28D33C" },
+    { browser: "Soul Fingerprint", visitors: 200, fill: "#E300C5" },
+    { browser: "Universal Decoder™", visitors: 187, fill: "#FFFFFF" }
 ]
 
 const chartConfig = {
