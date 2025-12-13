@@ -28,10 +28,10 @@ const SignIn = () => {
             message: 'Please enter a valid email address'
         }
     }
-
     const passwordValidation = {
         required: 'Password is required',
-    }   
+    }
+
     return (
         <div className="flex justify-center items-center">
             <div className="w-[540px] bg-common p-7 rounded-xl flex flex-col justify-between items-center space-y-8">
@@ -45,20 +45,20 @@ const SignIn = () => {
                 {/* login form */}
                 <div className="w-full">
                     <FormHandler onSubmit={onsubmit}>
-                    <FormInput type="text" name="email" label="email" placeholder="Enter your email" validation={emailValidation}></FormInput>
-                    <div className="relative">
-                        <FormInput label="Password" name="password" type={showPassword ? "text" : "password"} placeholder="Enter your password" validation={passwordValidation}></FormInput>
-                        <div onClick={() => setShowPassword(!showPassword)} className="absolute top-12 text-xl right-5 text-title">
-                            {
-                                showPassword ? <LuEye /> : <LuEyeOff />
-                            }
+                        <FormInput type="text" name="email" label="email" placeholder="Enter your email" validation={emailValidation}></FormInput>
+                        <div className="relative">
+                            <FormInput label="Password" name="password" type={showPassword ? "text" : "password"} placeholder="Enter your password" validation={passwordValidation}></FormInput>
+                            <div onClick={() => setShowPassword(!showPassword)} className="absolute top-12 text-xl right-5 text-title">
+                                {
+                                    showPassword ? <LuEye /> : <LuEyeOff />
+                                }
+                            </div>
                         </div>
-                    </div>
-                    <div className="flex justify-end items-center text-[#DF2421]">
-                        <Link href={"/auth/forget-password"} className="text-sm font-medium">Forget Password?</Link>
-                    </div>
-                    <button type="submit" className="bg-main w-full text-header rounded-xl py-3 mt-7 cursor-pointer">Sign in</button>
-                </FormHandler>
+                        <div className="flex justify-end items-center text-[#DF2421]">
+                            <Link href={"/auth/forget-password"} className="text-sm font-medium">Forget Password?</Link>
+                        </div>
+                        <button type="submit" className="bg-main w-full text-header rounded-xl py-3 mt-7 cursor-pointer">Sign in</button>
+                    </FormHandler>
                 </div>
             </div>
         </div>

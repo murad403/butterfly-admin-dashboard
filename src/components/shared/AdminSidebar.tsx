@@ -55,7 +55,7 @@ const AdminSidebar = () => {
                 <Dialog>
                     <form>
                         <DialogTrigger asChild>
-                            <button onClick={handleLogout} className="flex items-center gap-3 rounded-md px-4 w-full font-medium text-[18px] bg-common hover:bg-main transition-all duration-300 cursor-pointer py-2">
+                            <button className="flex items-center gap-3 rounded-md px-4 w-full font-medium text-[18px] bg-common hover:bg-main transition-all duration-300 cursor-pointer py-2">
                                 <LogOut className="text-[#E33629]" size={18} />
                                 <span className="text-white">Logout</span>
                             </button>

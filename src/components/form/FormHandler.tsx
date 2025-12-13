@@ -7,8 +7,8 @@ type TProps = {
   onSubmit: (data: any) => void
 }
 
-const FormHandler = ({children, onSubmit}: TProps) => {
-    const methods = useForm();
+const FormHandler = ({ children, onSubmit }: TProps) => {
+  const methods = useForm({mode: 'onSubmit'});
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
